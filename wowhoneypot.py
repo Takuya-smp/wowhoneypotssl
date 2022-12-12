@@ -194,7 +194,7 @@ class WOWHoneypotRequestHandler(BaseHTTPRequestHandler):
                 else:
                     hostname = self.headers["host"].split(" ")[0]
                 if hostname.find(":") == -1:
-                    hostname = hostname + ":80"
+                    #hostname = hostname + ":80"
                     hostname = hostname + ":" + hostport
             else:
                 hostname = "blank:80"
